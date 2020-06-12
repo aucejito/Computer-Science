@@ -1,0 +1,10 @@
+﻿HolaOpenGL.obj : error LNK2019: símbolo externo __imp__FreeImage_Unload@4 sin resolver al que se hace referencia en la función "void __cdecl loadImageFile(char *)" (?loadImageFile@@YAXPAD@Z)
+HolaOpenGL.obj : error LNK2019: símbolo externo __imp__FreeImage_Load@12 sin resolver al que se hace referencia en la función "void __cdecl loadImageFile(char *)" (?loadImageFile@@YAXPAD@Z)
+HolaOpenGL.obj : error LNK2019: símbolo externo __imp__FreeImage_Save@16 sin resolver al que se hace referencia en la función "void __cdecl saveScreenshot(char *,int,int)" (?saveScreenshot@@YAXPADHH@Z)
+HolaOpenGL.obj : error LNK2019: símbolo externo __imp__FreeImage_GetFileType@8 sin resolver al que se hace referencia en la función "void __cdecl loadImageFile(char *)" (?loadImageFile@@YAXPAD@Z)
+HolaOpenGL.obj : error LNK2019: símbolo externo __imp__FreeImage_GetBits@4 sin resolver al que se hace referencia en la función "void __cdecl loadImageFile(char *)" (?loadImageFile@@YAXPAD@Z)
+HolaOpenGL.obj : error LNK2019: símbolo externo __imp__FreeImage_GetWidth@4 sin resolver al que se hace referencia en la función "void __cdecl loadImageFile(char *)" (?loadImageFile@@YAXPAD@Z)
+HolaOpenGL.obj : error LNK2019: símbolo externo __imp__FreeImage_GetHeight@4 sin resolver al que se hace referencia en la función "void __cdecl loadImageFile(char *)" (?loadImageFile@@YAXPAD@Z)
+HolaOpenGL.obj : error LNK2019: símbolo externo __imp__FreeImage_ConvertTo32Bits@4 sin resolver al que se hace referencia en la función "void __cdecl loadImageFile(char *)" (?loadImageFile@@YAXPAD@Z)
+HolaOpenGL.obj : error LNK2019: símbolo externo __imp__FreeImage_ConvertFromRawBits@36 sin resolver al que se hace referencia en la función "void __cdecl saveScreenshot(char *,int,int)" (?saveScreenshot@@YAXPADHH@Z)
+C:\Users\jalr_\Desktop\Cosas de Juan\SGI\Practica 0\Practica0\Practica0\\Practica0.exe : fatal error LNK1120: 9 externos sin resolver

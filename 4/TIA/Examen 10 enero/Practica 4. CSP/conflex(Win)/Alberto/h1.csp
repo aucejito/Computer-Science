@@ -1,0 +1,59 @@
+# conflex "h1.csp"
+##### c4q.csp = hamburguesas
+ 
+########################################## 
+###   Requetes, Parametres et Options  ### 
+########################################## 
+  
+\alpha = 0.8; # grado minimo de satisfactibilidad para suponer que una restriccion se satisface (ser una solucion)
+\filtering : f ; 
+\search : rfla , 
+    all_solutions # para encontrar todas las soluciones
+#    best_solution # para encontrar la mejor solucion
+#    first_solutions 5 # para encontrar las 5 primeras soluciones
+; 
+\static_labeling_order  : # Heuristica estatica
+    smallest_domain  # Por orden del dominio mas pequeño
+#    greatest_degree # Por orden de variables mas ligadas
+#    smallest_domain_by_degree # Relacion talla_dominio/grado mas pequño
+; 
+#\dynamic_labeling_order : # Heuristica dinamica
+#    smallest_domain  # Por orden del dominio mas pequeño
+#    smallest_domain_by_degree # Relacion talla_dominio/grado mas pequño
+# 
+; 
+\verbose :  
+    display_solutions  # Presenta solo las soluciones
+#    display_csp # Presenta el CSP despues del preproceso inicial
+#    display_filtering # Traza del preproceso
+#    display_search # Traza detallada de la busqueda de la solucion
+#       display_intervals # Traza del calculo de intervalos
+; 
+ 
+############################## 
+###       VARIABLES        ### 
+##############################  
+ 
+#H: Hamburguesas  
+#P: Panes 
+#Q: Loncha de queso
+#B: Loncha de beicon
+#C: Loncha de cebolla  
+ 
+\vi : H 1..5; # Empieza en 1 porque almenos debe haber 1 hamburguesa
+\vi : P 1..5; # Empieza en 1 porque almenos debe haber un pan
+\vi : Q 0..3;
+\vi : B 0..3;
+\vi : C 0..3;
+ 
+############################## 
+###      CONTRAINTES       ### 
+##############################  
+
+# No puede haber una hamburguesa que no tenga un pan en cada lado, es decir, el numero de panes debe ser 1 mas que el de hamburguesas
+\ci : rd1 , P = H+1;
+
+# Al menos debe haber un toping en cada modelo de hamburguesa, es decir, la suma de los topings debe ser mayor o igual a 1
+\ci : rd2 , Q+B+C >= 1;   
+
+ 

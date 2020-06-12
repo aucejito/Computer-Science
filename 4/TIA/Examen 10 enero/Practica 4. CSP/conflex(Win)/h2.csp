@@ -1,0 +1,80 @@
+##### c4q.csp = hamburguesas
+ 
+########################################## 
+###   Requetes, Parametres et Options  ### 
+########################################## 
+  
+\alpha = 0.8; 
+\filtering : f ; 
+\search : rfla , 
+    all_solutions 
+#    best_solution 
+#    first_solutions 5 
+; 
+\static_labeling_order  : 
+    smallest_domain  
+#    greatest_degree 
+#    smallest_domain_by_degree 
+; 
+#\dynamic_labeling_order : 
+#    smallest_domain  
+#    smallest_domain_by_degree 
+# 
+; 
+\verbose :  
+    display_solutions  
+#    display_csp 
+#    display_filtering 
+#    display_search 
+#       display_intervals 
+; 
+ 
+############################## 
+###       VARIABLES        ### 
+##############################  
+ 
+#H: Hamburguesas  
+#P: Panes 
+#Q: Loncha de queso
+#B: Loncha de beicon
+#C: Loncha de cebolla  
+ 
+\vi : H 1..5;
+\vi : P 1..5;
+\vi : Q 0..3;
+\vi : B 0..3;
+\vi : C 0..3;
+ 
+############################## 
+###      CONTRAINTES       ### 
+##############################  
+
+\ci : rd1 , P = H+1;
+\ci : rd2 , Q+B+C >= 1; 
+
+\ce: p0 H,
+    5 (1)
+    4 (0.9)
+    3 (0.8)
+    2 (0.4)
+    1 (0.2);
+
+\ce: p1 Q,
+    3 (0.8)
+    2 (0.4)
+    1 (0.2)
+    0 (0.1);
+
+\ce: p2 B,
+    3 (0.8)
+    2 (0.4)
+    1 (0.2)
+    0 (0.1);
+
+\ce: p3 C,
+    3 (0.8)
+    2 (0.4)
+    1 (0.2)
+    0 (0.1);
+
+ 

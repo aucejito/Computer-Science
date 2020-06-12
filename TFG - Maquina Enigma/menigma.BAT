@@ -1,0 +1,2 @@
+python enigma.py
+pause

@@ -1,0 +1,137 @@
+##### c4q.csp = coches 
+ 
+########################################## 
+###   Requetes, Parametres et Options  ### 
+########################################## 
+  
+\alpha = 0.1; 
+\filtering : f ; 
+\search : rfla , 
+    all_solutions 
+#    best_solution 
+#    first_solutions 5 
+; 
+\static_labeling_order  : 
+    smallest_domain  
+#    greatest_degree 
+#    smallest_domain_by_degree 
+; 
+#\dynamic_labeling_order : 
+#    smallest_domain  
+#    smallest_domain_by_degree 
+# 
+; 
+\verbose :  
+    display_solutions  
+#    display_csp 
+#    display_filtering 
+#    display_search 
+#       display_intervals 
+; 
+ 
+############################## 
+###       VARIABLES        ### 
+##############################  
+ 
+#0: No Pintura No Metalizado 
+#1: Pintura 
+#2: Metalizado 
+#3: Pintura y Metalizado  
+ 
+\vi : M1, M2, M3, M4, M5 0..3; 
+ 
+############################## 
+###      CONTRAINTES       ### 
+##############################  
+ 
+\doc:Doc1p1  
+        \ci : rd111 , M1!=1; 
+    \or  
+        \ci : rd112 ,  M2=1; 
+    \or  
+        \ci : rd113 ,  M2=2; 
+; 
+ 
+\doc:Doc1p2  
+        \ci : rd121 , M1=1; 
+    \or  
+		\ci : rd122 ,  M2!=1;
+; 
+
+\doc:Doc1p3 
+        \ci : rd131 , M1=1; 
+    \or  
+		\ci : rd132 ,  M2!=2;
+; 
+ 
+\doc:Doc1p4  
+        \ci : rd141 , M1!=2; 
+    \or  
+        \ci : rd142 ,  M3=0; 
+    \or  
+        \ci : rd143 ,  M5=3; 
+; 
+ 
+\doc:Doc1p5  
+        \ci : rd151 , M1=2; 
+    \or  
+		\ci : rd152 ,  M3!=0; 
+; 
+
+\doc:Doc1p6
+        \ci : rd161 , M1=2; 
+    \or  
+		\ci : rd162 ,  M5!=3;  
+; 
+ 
+\doc:Doc2p1 
+        \ci : rd211 , M2!=1; 
+    \or  
+        \ci : rd212 ,  M1=1; 
+    \or  
+        \ci : rd213 ,  M1=2; 
+    \or  
+        \ci : rd214 ,  M5=0; 
+; 
+ 
+\doc:Doc2p2 
+        \ci : rd221 , M2=1; 
+    \or  
+        \ci : rd222 ,  M1!=1;   
+; 
+
+\doc:Doc2p3 
+        \ci : rd231 , M2=1; 
+    \or  
+        \ci : rd232 ,  M1!=2; 
+; 
+
+\doc:Doc2p4 
+        \ci : rd241 , M2=1; 
+    \or  
+        \ci : rd242 ,  M5!=0;
+; 
+ 
+\doc:Doc2p5 
+        \ci : rd251 , M2!=2; 
+    \or  
+        \ci : rd252 ,  M3=3; 
+    \or  
+        \ci : rd253 ,  M4=3; 
+; 
+ 
+\doc:Doc2p6
+        \ci : rd261 , M2=2; 
+    \or  
+        \ci : rd262 ,  M3!=3;  
+;
+
+\doc:Doc2p7
+        \ci : rd271 , M2=2; 
+    \or  
+        \ci : rd273 ,  M4!=3; 
+;
+
+\ci : rd1 , M1 != M2; 
+\cim : rd2 , !=(M3,M4,M5); 
+

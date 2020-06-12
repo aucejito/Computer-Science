@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BIF VERSION="0.3"  xmlns="http://www.cs.ubc.ca/labs/lci/fopi/ve/XMLBIFv0_3"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.cs.ubc.ca/labs/lci/fopi/ve/XMLBIFv0_3 http://www.cs.ubc.ca/labs/lci/fopi/ve/XMLBIFv0_3/XMLBIFv0_3.xsd">
+<NETWORK>
+<NAME>Untitled</NAME>
+<PROPERTY>detailed = </PROPERTY>
+<PROPERTY>short = </PROPERTY>
+
+<VARIABLE TYPE="nature">
+	<NAME>Huellas</NAME>
+	<OUTCOME>T</OUTCOME>
+	<OUTCOME>F</OUTCOME>
+	<PROPERTY>position = (7311.74755859375, 5150.66064453125)</PROPERTY>
+</VARIABLE>
+
+<VARIABLE TYPE="nature">
+	<NAME>Motivo</NAME>
+	<OUTCOME>T</OUTCOME>
+	<OUTCOME>F</OUTCOME>
+	<PROPERTY>position = (7441.8701171875, 5151.375)</PROPERTY>
+</VARIABLE>
+
+<VARIABLE TYPE="nature">
+	<NAME>No_coartada</NAME>
+	<OUTCOME>T</OUTCOME>
+	<OUTCOME>F</OUTCOME>
+	<PROPERTY>position = (7602.25244140625, 5157.93115234375)</PROPERTY>
+</VARIABLE>
+
+<VARIABLE TYPE="nature">
+	<NAME>Culpable</NAME>
+	<OUTCOME>T</OUTCOME>
+	<OUTCOME>F</OUTCOME>
+	<PROPERTY>position = (7512.76806640625, 5385.33935546875)</PROPERTY>
+</VARIABLE>
+
+<VARIABLE TYPE="nature">
+	<NAME>Mala_relacion</NAME>
+	<OUTCOME>T</OUTCOME>
+	<OUTCOME>F</OUTCOME>
+	<PROPERTY>position = (7371.0, 5021.0)</PROPERTY>
+</VARIABLE>
+
+<VARIABLE TYPE="nature">
+	<NAME>Beneficio</NAME>
+	<OUTCOME>T</OUTCOME>
+	<OUTCOME>F</OUTCOME>
+	<PROPERTY>position = (7525.0, 5020.0)</PROPERTY>
+</VARIABLE>
+
+<DEFINITION>
+	<FOR>Huellas</FOR>
+	<TABLE>0.65 0.35</TABLE>
+</DEFINITION>
+
+<DEFINITION>
+	<FOR>Motivo</FOR>
+	<GIVEN>Mala_relacion</GIVEN>
+	<GIVEN>Beneficio</GIVEN>
+	<TABLE>0.7 0.3 0.4 0.6 0.5 0.5 0.01 0.99</TABLE>
+</DEFINITION>
+
+<DEFINITION>
+	<FOR>No_coartada</FOR>
+	<TABLE>0.29 0.71</TABLE>
+</DEFINITION>
+
+<DEFINITION>
+	<FOR>Culpable</FOR>
+	<GIVEN>Huellas</GIVEN>
+	<GIVEN>Motivo</GIVEN>
+	<GIVEN>No_coartada</GIVEN>
+	<TABLE>0.9 0.1 0.7 0.3 0.5 0.5 0.3 0.7 0.8 0.2 0.8 0.2 0.5 0.5 0.001 0.999</TABLE>
+</DEFINITION>
+
+<DEFINITION>
+	<FOR>Mala_relacion</FOR>
+	<TABLE>0.6 0.4</TABLE>
+</DEFINITION>
+
+<DEFINITION>
+	<FOR>Beneficio</FOR>
+	<TABLE>0.8 0.2</TABLE>
+</DEFINITION>
+</NETWORK>
+</BIF>

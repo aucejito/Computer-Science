@@ -1,0 +1,18 @@
+MAQUINA: KRIEGSMARINE M3 - UKW = C
+
+ORDEN ROTORES: VII-VI-IV
+
+RINGSTELLUNG: 06, 22, 14
+
+CLAVE: AAA (Al finalizar será BPV)
+
+PLUGBOARD: PO, ML, IU, KJ, NH, YT, GB, VF, RE, DC
+
+
+MENSAJE: Tony, me alegro de que hayas vuelto al complejo. No me gusta la idea de que te pasees por la mansion a solas. Todos necesitamos una familia. Mi fe se basa en la gente, imagino. En los individuos. Y me alegra decir que, en su mayoria, no me han decepcionado. Por eso yo tampoco puedo decepcionarlos. Crei que no contandote lo de tus padres te evitaba ese sufrimiento, pero ahora me doy cuenta de que era a mi a quien se lo evitaba. Te pido perdon.
+
+CIFRADO:
+
+NWEDFNPSSHHDZXJCFPLLYXTJMOMYPVBLHFRHVAPSAZHQRPQOFPBDDBGSWKGFLSZCYLCDJPPGSPBWAFDUPYKIGVSACVYFIJCZVACORAOJMEYFCCHWJYINMEHNJOELRZFCTVWLZOOTBOEHFXENMFLCSAYXNQMZQXALNNGDYJPHXFRGYTMLOYBQUZZVWRGQEQAMUDVHKQRNPSXFNFPKWNMHDELDNDLKHUCDPNLJLNJEFKGNLYXQHQCZCLLQNBGYCZGXHAAZSOABIMIYDQJODOXPWSDAYHFDEHFQUOIHBANKDQXCSAZLWKMAVKJBBNYRWTNDLLVRMXUIQHKORMKFJDBYCCWBWRA
+
+

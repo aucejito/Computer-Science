@@ -1,0 +1,67 @@
+# conflex "matrizmagica.csp"
+
+# Un cuadrado mágico es la disposicion de una serie de numeros enteros
+# en un cuadrado o matriz de forma tal que la suma de los numeros por
+# columnas, filas y las dos diagonales sea la misma, la constante magica.
+
+##### matrizmagica.csp = cuadrado magico
+
+##########################################
+###   Requetes, Parametres et Options  ###
+##########################################
+ 
+\alpha = 0.1; # grado minimo de satisfactibilidad para suponer que una restriccion se satisface (ser una solucion)
+\filtering : f ; 
+\search : rfla , 
+	all_solutions # para encontrar todas las soluciones
+#	best_solution # para encontrar la mejor solucion
+#	first_solutions 5 # para encontrar las 5 primeras soluciones
+;
+\static_labeling_order  : # Heuristica estatica
+	smallest_domain # Por orden del dominio mas pequeño
+#	greatest_degree # Por orden de variables mas ligadas
+#	smallest_domain_by_degree # Relacion talla_dominio/grado mas pequño
+;
+#\dynamic_labeling_order : # Heuristica dinamica
+#	smallest_domain  # Por orden del dominio mas pequeño
+#	smallest_domain_by_degree # Relacion talla_dominio/grado mas pequño
+#
+;
+\verbose : 
+	display_solutions # Presenta solo las soluciones
+#	display_csp # Presenta el CSP despues del preproceso inicial
+#	display_filtering # Traza del preproceso
+#	display_search # Traza detallada de la busqueda de la solucion
+#       display_intervals # Traza del calculo de intervalos
+;
+
+##############################
+###       VARIABLES        ###
+############################## 
+
+# Como nuestra matriz queremos que el numero de filas y columnas sea de 3 en total
+# tendremos 3*3 = 9 variables, una por cada celda de la matriz. El 1..9 son los posibles
+# valores que pueden tomar esas variables
+
+# X1  X2  X3
+# X4  X5  X6
+# X7  X8  X9
+
+\vi : X1, X2, X3, X4, X5, X6, X7, X8, X9 1..9 ;
+
+##############################
+###      CONTRAINTES       ###
+############################## 
+
+# usamos cim para definir una misma restriccion sobre un conjunto de variables
+\cim : rd0 , !=(X1,X2,X3,X4,X5,X6,X7,X8,X9); # restriccion para que no se repita ningun numero
+
+# usamos ci para restringir los valores de las variables que pueden tomar
+\ci : rd1 , X1+X2+X3 = X1+X5+X9; # diagonal principal
+\ci : rd2 , X1+X2+X3 = X1+X4+X7; # 1 columna
+\ci : rd3 , X1+X2+X3 = X2+X5+X8; # 2 columna
+\ci : rd4 , X1+X2+X3 = X3+X6+X9; # 3 columna
+\ci : rd5 , X1+X2+X3 = X4+X5+X6; # 2 fila
+\ci : rd6 , X1+X2+X3 = X7+X8+X9; # 3 fila
+\ci : rd7 , X1+X2+X3 = X3+X5+X7; # diagonal secundaria
+

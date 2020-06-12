@@ -1,0 +1,23 @@
+﻿  Animacion.cpp
+c:\users\jalr_\downloads\gl\include\utilidades.h(29): warning C4305: 'inicializando': truncamiento de 'double' a 'const GLfloat'
+c:\users\jalr_\downloads\gl\include\utilidades.h(30): warning C4305: 'inicializando': truncamiento de 'double' a 'const GLfloat'
+c:\users\jalr_\downloads\gl\include\utilidades.h(35): warning C4305: 'inicializando': truncamiento de 'double' a 'const GLfloat'
+c:\users\jalr_\downloads\gl\include\utilidades.h(36): warning C4305: 'inicializando': truncamiento de 'double' a 'const GLfloat'
+c:\users\jalr_\downloads\gl\include\utilidades.h(38): warning C4305: 'inicializando': truncamiento de 'double' a 'const GLfloat'
+c:\users\jalr_\downloads\gl\include\utilidades.h(252): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+d:\cosas de juan\sgi\interaccion\animacion\animacion.cpp(26): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+d:\cosas de juan\sgi\interaccion\animacion\animacion.cpp(28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+d:\cosas de juan\sgi\interaccion\animacion\animacion.cpp(70): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+d:\cosas de juan\sgi\interaccion\animacion\animacion.cpp(70): warning C4305: '+=': truncamiento de 'double' a 'float'
+d:\cosas de juan\sgi\interaccion\animacion\animacion.cpp(84): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+d:\cosas de juan\sgi\interaccion\animacion\animacion.cpp(267): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+d:\cosas de juan\sgi\interaccion\animacion\animacion.cpp(268): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+d:\cosas de juan\sgi\interaccion\animacion\animacion.cpp(271): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+d:\cosas de juan\sgi\interaccion\animacion\animacion.cpp(272): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+d:\cosas de juan\sgi\interaccion\animacion\animacion.cpp(309): warning C4326: el tipo de valor devuelto de 'main' debe ser 'int' en lugar de 'void'
+  Generando código
+  2 of 37 functions ( 5.4%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Generación de código finalizada
+  Animacion.vcxproj -> D:\Cosas de Juan\SGI\Interaccion\Animacion\\Animacion.exe

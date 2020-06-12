@@ -1,0 +1,89 @@
+##### c4q.csp = hamburguesas
+ 
+########################################## 
+###   Requetes, Parametres et Options  ### 
+########################################## 
+  
+\alpha = 0.8; # grado minimo de satisfactibilidad para suponer que una restriccion se satisface (ser una solucion)
+\filtering : f ; 
+\search : rfla , 
+    all_solutions # para encontrar todas las soluciones
+#    best_solution # para encontrar la mejor solucion
+#    first_solutions 5 # para encontrar las 5 primeras soluciones
+; 
+\static_labeling_order  : # Heuristica estatica
+    smallest_domain  # Por orden del dominio mas pequeño
+#    greatest_degree # Por orden de variables mas ligadas
+#    smallest_domain_by_degree # Relacion talla_dominio/grado mas pequño
+; 
+#\dynamic_labeling_order : # Heuristica dinamica
+#    smallest_domain  # Por orden del dominio mas pequeño
+#    smallest_domain_by_degree # Relacion talla_dominio/grado mas pequño
+# 
+; 
+\verbose :  
+    display_solutions  # Presenta solo las soluciones
+#    display_csp # Presenta el CSP despues del preproceso inicial
+#    display_filtering # Traza del preproceso
+#    display_search # Traza detallada de la busqueda de la solucion
+#       display_intervals # Traza del calculo de intervalos
+; 
+ 
+############################## 
+###       VARIABLES        ### 
+##############################  
+ 
+#H: Hamburguesas  
+#P: Panes 
+#Q: Loncha de queso
+#B: Loncha de beicon
+#C: Loncha de cebolla  
+ 
+\vi : H 1..5; # Empieza en 1 porque almenos debe haber 1 hamburguesa
+\vi : P 1..5; # Empieza en 1 porque almenos debe haber un pan
+\vi : Q 0..3;
+\vi : B 0..3;
+\vi : C 0..3;
+ 
+############################## 
+###      CONTRAINTES       ### 
+##############################  
+
+# No puede haber una hamburguesa que no tenga un pan en cada lado, es decir, el numero de panes debe ser 1 mas que el de hamburguesas
+\ci : rd1 , P = H+1;
+
+# Al menos debe haber un toping en cada modelo de hamburguesa, es decir, la suma de los topings debe ser mayor o igual a 1
+\ci : rd2 , Q+B+C >= 1;  
+
+# ce son restricciones extensionales, es decir, especifican los valores que simultaneamente pueden tomar las variables
+\ce: p0 H,
+    5 (1) # Que hayan 5 hamburguesas tiene preferencia 10
+    4 (0.9) # 4 hamburguesas tiene preferencia 9
+    3 (0.8) # 3 hamburguesas preferencia 8
+    2 (0.4) # 2 hamburguesas preferencia 4
+    1 (0.2); # 1 hamburguesa preferencia 2
+
+\ce: p1 Q,
+    3 (0.8) # 3 ingredientes tiene preferencia 8
+    2 (0.4) # 2 ingredientes tiene preferencia 4
+    1 (0.2) # 1 ingrediente tiene preferencia 2
+    0 (0.1); # 0 ingredientes tiene preferencia 1
+
+\ce: p2 B,
+    3 (0.8) # 3 ingredientes tiene preferencia 8
+    2 (0.4) # 2 ingredientes tiene preferencia 4
+    1 (0.2) # 1 ingrediente tiene preferencia 2
+    0 (0.1); # 0 ingredientes tiene preferencia 1
+
+\ce: p3 C,
+    3 (0.8) # 3 ingredientes tiene preferencia 8
+    2 (0.4) # 2 ingredientes tiene preferencia 4
+    1 (0.2) # 1 ingrediente tiene preferencia 2
+    0 (0.1); # 0 ingredientes tiene preferencia 1
+
+\ce: p4 H Q,
+    1   1   (0.4) # Si hay 1 hamburguesa y 1 de queso tiene preferencia 4
+    2   2   (0.6) # Si hay 2 hamburguesas y 2 de queso tiene preferencia 6
+    3   3   (0.8); # Si hay 3 hamburguesas y 3 de queso tiene preferencia 8
+
+ 

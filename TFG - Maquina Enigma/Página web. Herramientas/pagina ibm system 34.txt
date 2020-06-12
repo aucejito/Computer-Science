@@ -1,0 +1,201 @@
+<p style="text-align: center"><span style="color: #d60066"><strong><span style="font-size: 2em;line-height: 1.5em">El IBM System/34, computador orientado a los negocios</span></strong></span></p>
+
+<h5 style="text-align: center;color: #404040"><strong>Artemi Lapine Domnine</strong></h5>
+El <strong>IBM System/34</strong> fue un computador de gama media, lanzado al mercado por la empresa <strong>IBM</strong> (International Business Machines) en el año 1977. El equipo fue discontinuado en febrero de 1984. Este computador era <strong>multitarea y multiusuario</strong>, siendo el sucesor del IBM System/32. Por otro lado, el sucesor de este sistema fue el IBM System/36. Era un sistema de procesamiento de datos de <strong>propósito general</strong> diseñado para un amplio rango de aplicaciones, pero sobretodo estaba orientado al ámbito de los negocios, la contabilidad y la entrada de pedidos y nóminas. Fue diseñado para pequeñas y medianas empresas debido, pudiendo adquirirse computadores System/34 con <strong>diferentes especificaciones</strong>.
+<table style="border: 0px" border="0" width="200">
+<tbody>
+<tr>
+<td style="border: 0px;max-width: 800px"><a href="http://museo.inf.upv.es/wp-content/uploads/2019/04/figExtra31.jpg"><img src="http://museo.inf.upv.es/wp-content/uploads/2019/04/figExtra31-300x225.jpg" alt="" width="300" height="225" class="alignleft size-medium wp-image-7712" /></a></td>
+<td style="vertical-align: middle;border: 0px">
+<blockquote>Visión global de un IBM System/34
+
+En la imagen se pueden observar varios monitores 5251, las impresoras modelo 5256 y 5211, así como la unidad de procesamiento 5340.</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+
+Como principal diferencia respecto a su predecesor podemos destacar que este sistema disponía de <strong>dos procesadores</strong>. El primero se llamaba <strong>CSP</strong> (Control Storage Processor), su velocidad de reloj era de <strong>4 MHz</strong>. Se ocupaba de ejecutar funciones del sistema en segundo plano. Por otro lado, estaba el <strong>MSP</strong> (Main Storage Processor), cuya velocidad de reloj era <strong>1 MHz</strong>. Este se ocupaba de ejecutar las instrucciones de los programas. El procesador MSP estaba basado en la arquitectura del procesador del System/3, mientras que el CSP estaba basado en el System/32.
+<table style="border: 0px" border="0" width="200">
+<tbody>
+<tr>
+<td style="border: 0px;max-width: 800px"><a href="https://farm8.staticflickr.com/7811/46644720724_4a3281ce79_b.jpg" rel="lightbox[1149]"><img src="https://farm8.staticflickr.com/7811/46644720724_4a3281ce79_b.jpg" alt="Pantalla de inicio" longdesc="Pantalla de inicio" /></a></td>
+<td style="vertical-align: middle;border: 0px">
+<blockquote>Interior de la unidad de procesamiento, modelo 5340
+
+Se muestra el interior de la unidad de procesamiento. Se pueden observar los discos duros y otros dispositivos, como el lector de disquete (parte superior derecha, tapado por la placa metálica).</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+Muchos son los dispositivos existentes para este sistema. Es indispensable, para que el computador sea funcional, disponer de una <strong>unidad de procesamiento</strong>, una <strong>impresora</strong> y un <strong>conjunto de monitor y teclado</strong> (que actuará como medio de comunicación con el sistema). Entre los <strong>dispositivos opcionales</strong> para el sistema se encuentran el <strong>lector de caracteres magnéticos modelo 1255</strong>, cuya finalidad es leer y clasificar documentos escritos con tinta magnética, o la <strong>estación de trabajo 3741</strong>, que permite grabar datos y ficheros del sistema en un disquete y viceversa.
+<table style="border: 0px" border="0" width="200">
+<tbody>
+<tr>
+<td style="border: 0px;max-width: 800px"><a href="https://farm8.staticflickr.com/7817/46644720764_87a09d9ebd_b.jpg" rel="lightbox[1149]"><img src="https://farm8.staticflickr.com/7817/46644720764_87a09d9ebd_b.jpg" alt="Pantalla de inicio" longdesc="Pantalla de inicio" /></a></td>
+<td style="vertical-align: middle;border: 0px">
+<blockquote>Impresoras modelo 5256 y 5211
+
+Estos son los dos modelos existentes de impresoras para este sistema. Cualquiera de las dos impresoras sería válida como impresora del sistema.</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+Existía la posibilidad el uso de <strong>disquetes</strong> en este sistema. La unidad de procesamiento disponía de un <strong>lector de disquetes</strong>, pudiendo además adquirir la <strong>estación de trabajo 3741</strong> mencionada anteriormente. Entre una de sus <strong>funciones opcionales</strong>, se encontraba un <strong>depósito de disquetes</strong>, localizado junto a la ranura de disquetes capaz de <strong>almacenar hasta 23</strong>, permitiendo su lectura y escritura sin la necesidad de manipularlos manualmente. IBM ofrecía <strong>2 tipos</strong> de disquetes, llamados <strong>1 y 2D</strong> (doble densidad). Este disquete 2D disponía de <strong>dos caras</strong> por las que se guardaba información de los datos y ficheros del sistema. Los disquetes eran <strong>compatibles entre sistemas</strong>. Por ejemplo, se podía grabar información en un <strong>System/34</strong> y pasarla a un <strong>System/32</strong>.
+<table style="border: 0px" border="0" width="200">
+<tbody>
+<tr>
+<td style="border: 0px;max-width: 800px"><a href="https://farm8.staticflickr.com/7810/47296812312_500beb241d_z.jpg" rel="lightbox[1149]"><img src="https://farm8.staticflickr.com/7810/47296812312_500beb241d_z.jpg" alt="Pantalla de inicio" longdesc="Pantalla de inicio" /></a></td>
+<td style="vertical-align: middle;border: 0px">
+<blockquote>Disco duro del IBM System/34
+
+Estaba disponible en diferentes tamaños. Estos eran 8.6, 13.2, 27.1, 63.9 y 128.4 MegaBytes. En los casos de 27.1 y 128.4 Mb era necesario el uso de dos discos.</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+Para que el sistema funcionase, primero era necesario cargar el <strong>SSP</strong> (System Support Program). El <strong>SSP</strong> es el software que proporciona los <strong>controles básicos</strong> para el procesamiento de datos y otra funciones. Este software era lo que en su época se podría considerar el <strong>sistema operativo</strong>, pero en ningún momento se llegó a utilizar este término para describirlo. Con él era posible ejecutar programas, procesar funciones e información, a través de las estaciones de visualización. Los programas eran diseñados para funcionar conjuntamente con el <strong>SSP</strong>. Por otro lado tenemos el <strong>PP</strong> (Program Product), que eran programas escritos por IBM para auxiliar al operador del sistema. En total, existen cinco <strong>PP</strong>: programa de utilidad de Entrada Fuente (<strong>SEU</strong>), de Estación de Trabajo (<strong>WSU</strong>), de Fichero de Datos (<strong>DFU</strong>), de Diseño de Pantallas (<strong>SDA</strong>) y de Clasificación (<strong>Sort</strong>). Por último, queda hablar de <strong>CP</strong> (Customer Programs). Eran los programas escritos por los usuarios del sistema, usando las <strong>hojas de codificación</strong> proporcionadas por IBM, para más tarde ser introducidas en el sistema por los operarios usando los <strong>PP</strong> del <strong>WSU</strong> o <strong>SEU</strong>. El sistema ofrece soporte para múltiples lenguajes de programación: <strong>COBOL, FORTRAN IV, ensamblador y RPG II</strong>, siendo este ultimo el mas popular por las facilidades que ofrecía en comparación a los otros.
+<table style="border: 0px" border="0" width="200">
+<tbody>
+<tr>
+<td style="border: 0px;max-width: 800px"><a href="https://farm8.staticflickr.com/7847/47296683442_9564fd753c_b.jpg" rel="lightbox[1149]"><img src="https://farm8.staticflickr.com/7847/47296683442_9564fd753c_b.jpg" alt="Pantalla de inicio" longdesc="Pantalla de inicio" /></a></td>
+<td style="vertical-align: middle;border: 0px">
+<blockquote>Esquema del procesamiento de datos
+
+En la figura se puede observar el esquema general que ilustra el procesamiento de datos en IBM System/34.</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+Podemos destacar algunas importantes <strong>funciones</strong> que cumple el SSP, entre otras:
+<ul>
+  <li> <strong>Multiprogramación:</strong> Es posible ejecutar más de una tarea a la vez.
+  <li> <strong>Cola de procesos:</strong> Se puede poner una tarea en cola de ejecución para seguir trabajando mientras en otras tareas.
+  <li> <strong>Cola de impresora:</strong> Se pueden colocar en cola peticiones de impresión.
+  <li> <strong>Seguridad:</strong> Permite restringir el acceso a ficheros y librerías, así como a estaciones de visualización.
+  <li> <strong>Comunicación de datos:</strong> Proporciona estaciones remotas de trabajo. Permite la conexión concurrente con equipos remotos, soportando hasta un máximo de dos líneas de comunicación.
+  <li> <strong>Utilidades de sistema:</strong> Diferentes funciones básicas de sistema para el manejo de ficheros y directorios.
+</ul>
+
+La unidad central es el <strong>corazón del sistema</strong>. Se encarga de <strong>procesar y controlar</strong> todas las funciones del sistema. Este procesamiento de datos está compuesto por diferentes partes: la información que será procesada (<strong>entrada</strong>), el procesamiento de esa información (<strong>proceso</strong>) y los resultados del procesamiento (<strong>salida</strong>). Un ejemplo válido sería cuando un operador introduce información por medio de un disquete. La unidad central acepta esta información y la procesa, produciendo como salida un informe impreso.
+<table style="border: 0px" border="0" width="200">
+<tbody>
+<tr>
+<td style="border: 0px;max-width: 800px"><a href="https://farm8.staticflickr.com/7803/40384121003_8ae5eb6b08_b.jpg" rel="lightbox[1149]"><img src="https://farm8.staticflickr.com/7803/40384121003_8ae5eb6b08_b.jpg" alt="Pantalla de inicio" longdesc="Pantalla de inicio" /></a></td>
+<td style="vertical-align: middle;border: 0px">
+<blockquote>Esquema de la multiprogramación
+
+La imagen muestra un ejemplo de la característica de multiprogramación que ofrece el SSP.</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+Resulta interesante destacar la característica de <strong>multiprogramación</strong>. A medida que se ejecutan más y más programas, se necesita un <strong>uso más eficiente</strong> de la unidad de procesamiento. Para ejecutar dos procesos concurrentemente es posible que la unidad de procesamiento deba esperar a que terminen las operaciones de entrada y salida para proceder. Con la multiprogramación conseguimos <strong>reducir el tiempo de espera</strong> de la unidad de procesamiento. Podemos tener un programa <strong>A</strong> y otro <strong>B</strong> que están en pausa pero el programa <strong>C</strong> está listo para su ejecución. Entonces el sistema puede intercambiar <strong>A</strong> con <strong>C</strong>. Cuando el programa <strong>C</strong> termina o queda en pausa, puede ser intercambiado de nuevo con <strong>A</strong>, para continuar su ejecución. Esto implica una disminución de los tiempos de espera y ociosos del sistema. Esto es lo que se conoce como <strong>swapping</strong>.
+
+<table style="border: 0px" border="0" width="200">
+<tbody>
+<tr>
+<td style="border: 0px;max-width: 800px"><a href="https://farm8.staticflickr.com/7904/46434624665_ee3e0173b9_b.jpg" rel="lightbox[1149]"><img src="https://farm8.staticflickr.com/7904/46434624665_ee3e0173b9_b.jpg" alt="Pantalla de inicio" longdesc="Pantalla de inicio" /></a></td>
+<td style="vertical-align: middle;border: 0px">
+<blockquote>Publicidad del IBM System/34
+
+La imagen forma parte de un panfleto publicitario distribuido por IBM en los años 70.</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table style="border: 0px" border="0" width="200">
+<tbody>
+<tr>
+<td style="vertical-align: middle;border: 0px">
+<blockquote>Publicidad del IBM System/34
+
+Otra imagen del mismo panfleto publicitario de IBM.</blockquote>
+</td>
+<td style="border: 0px;max-width: 800px"><a href="https://farm8.staticflickr.com/7808/47368613131_51809a68de_m.jpg" rel="lightbox[1149]"><img src="https://farm8.staticflickr.com/7808/47368613131_51809a68de_m.jpg" alt="Pantalla de inicio" longdesc="Pantalla de inicio" /></a></td>
+</tr>
+</tbody>
+</table>
+En los <strong>panfletos publicitarios</strong> del sistema se pueden apreciar <strong>connotaciones sexistas</strong>, debido a que son las mujeres las que realizan siempre las <strong>tareas de oficina</strong>, mientras que los hombres aparecen ilustrados como <strong>líderes de proyecto</strong>.
+<table style="border: 0px" border="0" width="200">
+<tbody>
+<tr>
+<td style="border: 0px;max-width: 800px"><a href="https://farm8.staticflickr.com/7834/47368613151_2640d3a1dd_m.jpg" rel="lightbox[1149]"><img src="https://farm8.staticflickr.com/7834/47368613151_2640d3a1dd_m.jpg" alt="Pantalla de inicio" longdesc="Pantalla de inicio" /></a></td>
+<td style="vertical-align: middle;border: 0px">
+<blockquote>Manual RPG II de IBM
+
+Manual de aprendizaje del lenguaje de programación RPG II para programadores. Enfocado a su uso en el System/34.</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+Para terminar, se expondrá un <strong>ejemplo</strong> de un programa en <strong>RPG II</strong>. IBM facilita para los programadores unas <strong>hojas de especificación</strong>. En estas hojas se codifica el programa, los ficheros usados y las operaciones realizadas. Una vez codificado el programa, los operarios se encargan de transcribirlo al sistema utilizando las utilidades disponibles antes mencionadas. Este programa carga un fichero indexado en disco que contiene 100 registros creados mediante operaciones de cálculo. Cada uno de estos registros contiene 2 campos. Estos campos son <strong>COUNT</strong> (cuenta) y <strong>RECNBR</strong> (número de registro). Este programa solo requiere la introducción como entrada de un registro en blanco y la pulsación de una tecla al final del trabajo.
+<table style="border: 0px" border="0" width="200">
+<tbody>
+<tr>
+<td style="border: 0px;max-width: 800px"><a href="https://farm8.staticflickr.com/7880/33451950338_3498e45bdb_b.jpg" rel="lightbox[1149]"><img src="https://farm8.staticflickr.com/7880/33451950338_3498e45bdb_b.jpg" alt="Pantalla de inicio" longdesc="Pantalla de inicio" /></a></td>
+<td style="vertical-align: middle;border: 0px">
+<blockquote>Especificación de Descripción de Fichero
+
+Hoja de especificación con la descripción de los ficheros utilizados en el procesamiento del programa.</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+En la imagen anterior se puede observar que el fichero <strong>INPUT</strong> se asigna a <strong>CONSOLE</strong>. La E de la columna 17 hace referencia a que el programa no terminará hasta que se haya leido el ultimo registro de <strong>INPUT</strong>. El fichero de salida indexado <strong>DISKOUT</strong>, consta de <strong>128 registros</strong>. Los mensajes que indican que se ha realizado el trabajo se escriben en el fichero de salida <strong>OUTPUT</strong>.
+<table style="border: 0px" border="0" width="200">
+<tbody>
+<tr>
+<td style="border: 0px;max-width: 800px"><a href="https://farm8.staticflickr.com/7911/47275189472_980fb08024_b.jpg" rel="lightbox[1149]"><img src="https://farm8.staticflickr.com/7911/47275189472_980fb08024_b.jpg" alt="Pantalla de inicio" longdesc="Pantalla de inicio" /></a></td>
+<td style="vertical-align: middle;border: 0px">
+<blockquote>Especificación de Entrada
+
+Hoja de especificación con la descripción de los campos y registros de entrada utilizados.</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+El registro de entrada contiene un campo en blanco de una posición llamada <strong>NODATA</strong> (nada), que describe el <strong>código de identificación</strong> de registro. Este campo no se visualiza. En su lugar, se visualiza un campo de posición llamado <strong>EOF</strong>. Este campo se describe en la posición 2 del registro de entrada. Cuando se visualiza el aviso de <strong>EOF</strong> y se pulsan las teclas correspondientes de función el indicador <strong>LR</strong> (último registro) se pone a <strong>ON</strong>.
+<table style="border: 0px" border="0" width="200">
+<tbody>
+<tr>
+<td style="border: 0px;max-width: 800px"><a href="https://farm8.staticflickr.com/7919/46412818385_c6a3924829_b.jpg" rel="lightbox[1149]"><img src="https://farm8.staticflickr.com/7919/46412818385_c6a3924829_b.jpg" alt="Pantalla de inicio" longdesc="Pantalla de inicio" /></a></td>
+<td style="vertical-align: middle;border: 0px">
+<blockquote>Especificación de Cálculo
+
+Estas especificaciones describen los cálculos a efectuar con los datos y su orden.</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+Todos los cálculos están condicionados por el indicador <strong>LR</strong>, se ejecutan en tiempo de cálculo <strong>LR</strong>. El campo <strong>RECNBR</strong> guarda constancia del número de registros grabados en <strong>DISKOUT</strong>. El campo <strong>COUNT</strong> se incrementa de cinco en cinco con el fin de que exista un único campo de clave para todos los registros grabados en <strong>DISKOUT</strong>. Los registros se graban en el disco utilizando el codigo de operacion <strong>EXCPT</strong> y la salida de excepción. Todos estos cálculos forman parte del bucle <strong>REPEAT</strong>, que se ejecuta 100 veces, hasta que <strong>COUNT</strong> alcance <strong>505</strong> y se hayan creado <strong>100 registros</strong>. Al final del bucle se resta uno de <strong>RECBNR</strong> para indicar el número real de registros. Por último, las especificaciones de salida condicionadas por <strong>LR</strong> hacen que se grabe un mensaje en el fichero de salida <strong>OUTPUT</strong> indicando que el trabajo ha finalizado, el número de registros cargados, descripciones de fichero y campos clave.
+<table style="border: 0px" border="0" width="200">
+<tbody>
+<tr>
+<td style="border: 0px;max-width: 800px"><a href="https://farm8.staticflickr.com/7882/46412818465_f15f440149_z.jpg" rel="lightbox[1149]"><img src="https://farm8.staticflickr.com/7882/46412818465_f15f440149_z.jpg" alt="Pantalla de inicio" longdesc="Pantalla de inicio" /></a></td>
+<td style="vertical-align: middle;border: 0px">
+<blockquote>Especificación de Salida
+
+Estas especificaciones describen los registros y campos de los ficheros de salida, y las condiciones sobre las cuales se realizan las operaciones de salida.</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+Como última aportación, se muestra en la imagen siguiente un pequeño <strong>extracto publicitario</strong> de una empresa que se dedicaba a la <strong>compra/venta</strong> de equipos informáticos. Esta en concreto, se ha sacado de la revista <strong>ComputerWorld</strong> del 4 de julio de 1983. En la época, este tipo de revistas daban a conocer este tipo de empresas. En esta edición de la revista se pueden encontrar <strong>muchos otros</strong> anuncios publicitarios similares.
+<table style="border: 0px" border="0" width="200">
+<tbody>
+<tr>
+<td style="border: 0px;max-width: 800px"><a href="https://farm8.staticflickr.com/7813/33492461478_3244a32839_m.jpg" rel="lightbox[1149]"><img src="https://farm8.staticflickr.com/7813/33492461478_3244a32839_m.jpg" alt="Pantalla de inicio" longdesc="Pantalla de inicio" /></a></td>
+<td style="vertical-align: middle;border: 0px">
+<blockquote>Publicidad de compra/venta
+
+La imagen muestra un anuncio publicitario de los años 80. Extraida de la revista ComputerWorld.</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+Muchas gracias por tu tiempo y espero que hayas disfrutado con el <strong>IBM System/34</strong>.

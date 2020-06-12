@@ -1,0 +1,166 @@
+-------------------------------------------------------------------------------------
+PRIMERA DIAPOSITIVA
+-------------------------------------------------------------------------------------
+Muchas gracias, voy a proceder a la presentación del trabajo de fin de grado titulado "Arqueología Informática - Diseño e implementación de la máquina Enigma en Scratch".
+
+-------------------------------------------------------------------------------------
+SEGUNDA DIAPOSITIVA
+-------------------------------------------------------------------------------------
+Para empezar, se explicarán las causas que me hicieron escoger este tema y se describirán los objetivos que se intentan alcanzar. 
+
+Posteriormente, se contará la historia de la máquina Enigma, desde su origen como máquina de cifrado basada en rotores hasta su función en la Segunda Guerra Mundial.
+
+Luego, se explicará su mecánica y estructura interna; además del procedimiento que utilizaba el ejército alemán para el envío de mensajes.
+
+A continuación, se analizará la seguridad que presentaba este tipo de máquinas desde un punto de vista matemático.
+
+Después, se hablará del proceso de diseño e implementación para realizar el simulador de la Enigma.
+
+Por último, se mostrará un vídeo donde se verán las características de nuestro simulador y se harán unas comprobaciones finales.
+
+-------------------------------------------------------------------------------------
+TERCERA DIAPOSITIVA
+-------------------------------------------------------------------------------------
+Bien, el principal motivo que ha llevado a la realización de este proyecto es despertar el interés en la criptografía como ámbito de estudio para dotar de seguridad a las comunicaciones entre distintas entidades. Para ello, se ha escogido la máquina Enigma, por ser la máquina de cifrado más conocida.
+
+Dado que se trata de una máquina que automatiza los cálculos necesarios para las operaciones de cifrado y descifrado de mensajes, se puede implementar mediante un lenguaje de programación que, en nuestro caso, ha sido Scratch.
+
+Por tanto, este proyecto consiste en un trabajo de divulgación de una técnica de cifrado clásica a través de un simulador que estará disponible en el museo de la escuela.
+
+-------------------------------------------------------------------------------------
+CUARTA DIAPOSITIVA
+-------------------------------------------------------------------------------------
+Para hablar de la historia de la máquina Enigma hay que remontarse a principios del siglo XX. 
+
+En esa época, la expansión de las telecomunicaciones aumentó la necesidad de crear métodos de cifrado automatizados que sustituyeran a los métodos manuales. 
+
+Así, nacieron las máquinas de cifrado basadas en rotores y, en 1918, el ingeniero alemán Arthur Scherbius inventó la primera máquina Enigma (señala a la DIE HANDELSMASCHINE), con un mecanismo de impresión basado en una rueda giratoria. 
+
+Luego, diseñó una variante con barras tipográficas (señala a la DIE SCHREIBENDE ENIGMA); aunque ambas se caracterizaban por imprimir los mensajes en papel, como si fuesen máquinas de escribir corrientes.
+
+En 1924, debido a los problemas de impresión y a los altos costes, Scherbius desarrolló una máquina Enigma que producía su salida en un panel de luces en lugar de en papel; y cuyo mecanismo se encontraría alojado en una caja de madera. 
+
+Aquí vemos algunos ejemplos de este nuevo tipo, como la Enigma B (señala a la Enigma B), que fue la primera en hacer que el rotor de más a la derecha avanzase automáticamente al pulsar una tecla; o la Enigma D (señala a la Enigma D), cuya novedad era que las letras ahora estaban dispuestas en el orden más común QWER etcétera, en lugar de en orden alfabético.
+
+Es a partir de la Enigma D cuando el ejército alemán empezó a mostrar interés por estas máquinas y, en 1932, se desarrolló la máquina Enigma-I (señala a la Enigma I), que incluía un clavijero que añadía una capa extra al cifrado, como se puede apreciar aquí. A partir de esta Enigma-I surgirían nuevas versiones, como la M3 o la M4, de las que hablaremos más adelante. A modo de curiosidad, se hizo una versión de la Enigma en papel para el ejército, llamada Enigma-II, que es la que se puede ver aquí (señala a la Enigma II).
+-------------------------------------------------------------------------------------
+QUINTA DIAPOSITIVA
+-------------------------------------------------------------------------------------
+Ya dentro de la Segunda Guerra Mundial, en Bletlchey Park, Reino Unido, se reunieron criptógrafos y matemáticos para intentar descifrar los mensajes alemanes que se encriptaban con máquinas Enigma. Uno de ellos fue Alan Turing (señalar a ALAN TURING) que, basándose en experimentos que los polacos habían realizado para intentar romper la seguridad de Enigma, creó la máquina Bomba (señalar a MAQUINA BOMBA).
+
+Esta máquina emulaba el funcionamiento de varias Enigmas a la vez y lo que hacía era comprobar si un texto sin cifrar se correspondía con el mensaje interceptado, para averiguar qué configuración utilizaban las máquinas Enigma ese día. 
+
+Ante esto, la Armada alemana introdujo una versión de cuatro rotores de la máquina Enigma (señala a ENIGMA DE CUATRO ROTORES) que no podía ser descifrada por la Bomba, ya que esta estaba diseñada exclusivamente para máquinas de tres rotores.
+
+En 1942, ya con los americanos como aliados, Reino Unido compartió con ellos el conocimiento sobre la tecnología de la Bomba y, en 1943, se desarrolló una versión para descifrar máquinas Enigma de cuatro rotores.
+ 
+-------------------------------------------------------------------------------------
+SEXTA DIAPOSITIVA
+-------------------------------------------------------------------------------------
+En cuanto al funcionamiento interno de una máquina Enigma, primero hay que conocer sus componentes. 
+
+Una máquina Enigma no es más que una máquina de escribir con 26 teclas en la parte inferior, 26 bombillas en la parte central y los rotores situados en la parte superior formando la clave del mensaje, de modo que cuando pulsamos una tecla se ilumina la letra encriptada en el panel de luces y giran los rotores.
+
+La configuración para saber como se encripta una letra viene determinada por el clavijero, los rotores y los reflectores.
+
+En primer lugar, los 10 posibles rotores son los que aparecen en esta tabla (señala a la TABLA ROTORES). Del I al V eran usados en las máquinas del ejército de tierra y de aire, mientras que del VI al VIII los usaba la Armada. Beta y Gamma eran los que se utilizaban en la versión de cuatro rotores, y no se podían combinar con los demás, solo se podían colocar en la posición de más a la izquierda de la máquina. 
+
+Cada rotor contiene 26 contactos con resorte en su lado derecho y 26 contactos planos en el izquierdo. De esta forma (señala a la TABLA ROTORES) es como están cableados inicialmente los contactos de cada rotor. Si, por ejemplo, al rotor I le llega una B por la derecha, devolverá una K por la izquierda. 
+
+Aun así, estas conexiones pueden modificarse haciendo girar el anillo que hay en el núcleo del cableado de cada rotor. Después veremos cómo afecta esto al cifrado de una letra.
+
+Cuando el impulso eléctrico atraviesa los tres o cuatro rotores de la máquina, un componente se encarga de reenviarlo en orden inverso hasta el panel de luces. Este componente se llama reflector, y en esta tabla (señala a la TABLA REFLECTORES), están los cuatro que podían usarse. El B y el C se usaban en las máquinas de tres rotores, mientras que los finos se usaban en las de cuatro. Si, por ejemplo, usando el reflector B, llega una A desde el primer rotor, el reflector le enviará de vuelta una Y.
+
+Esta tabla de aquí son los puntos de rotación, que indican cuándo un rotor hace girar al de su izquierda. En una máquina de cuatro rotores, el rotor de más a la izquierda, que puede ser Beta o Gamma, no girará aunque el rotor de su derecha se encuentre en su punto de rotación.
+
+Por último, el clavijero, como se puede observar aquí (señala a la TABLA CLAVIJERO), es un tablero donde podemos conectar un par de letras. De esta forma, ambas letras se intercambian antes y después de la codificación por parte de los rotores. Aunque es posible usar hasta trece cables a la vez, solo se usaban diez.
+
+-------------------------------------------------------------------------------------
+SÉPTIMA DIAPOSITIVA
+-------------------------------------------------------------------------------------
+Aquí se puede apreciar un ejemplo de lo que sucede cuando a un rotor le llega el impulso electromecánico de una letra. En este caso, supongamos que el rotor I está situado en la parte derecha, en su forma inicial. Cuando le llega una 'A', esta viajará por el cableado interno hasta la letra 'E'. Como esta se encuentra en la quinta posición del rotor, la salida será la quinta letra del abecedario, que es la 'E'.
+
+Una vez hecho esto, el rotor realiza un paso, por lo que ahora se encuentra en esta configuración. Si le llega una 'A', esta ahora hace contacto con la letra 'K', que como se encuentra en la décima posición del rotor, la salida es la décima letra del abecedario, que es la 'J'.
+
+En este caso de aquí hemos supuesto que el rotor se encuentra con el ajuste de anillo B-02, lo que quiere decir que la primera letra del rotor, que en este caso es la 'E', se encuentra cableada en la letra 'B', y el resto de letras del rotor se conectan en orden. De este modo, al pulsar la 'A', esta hace contacto con la 'J', que como se encuentra en la decimoprimera posición del rotor, la salida es la decimoprimera letra del abecedario, que es la 'K'.
+
+Como podemos observar, una misma letra se puede encriptar de distintas formas, dependiendo de la configuración interna de la Enigma, por lo que se consigue un cifrado complejo. Además, hay que tener en cuenta que lo normal es que hayan tres o cuatro rotores uno al lado del otro, de forma que la entrada de uno es la salida del de su derecha, hasta que el impulso llega al reflector y hace el camino contrario.
+-------------------------------------------------------------------------------------
+OCTAVA DIAPOSITIVA
+-------------------------------------------------------------------------------------
+En cuanto a los mensajes, los alemanes utilizaban un diario de claves para saber como codificar, y en él se anotaban el orden de rotores, el ajuste de anillo de cada uno, las conexiones del clavijero y los grupos de identificación.  
+
+Este era el arquetipo de mensaje cifrado. En primer lugar, se observaba el primer grupo de cinco letras, que se correspondía con el grupo de identificación. Si miramos el diario de claves, vemos que al grupo 'EXS' se le ha añadido 'TV', esto era lo habitual, añadir dos letras aleatorias al principio o al final del grupo para colocarlo junto al resto del mensaje. Así se sabía que había que configurar la máquina Enigma como indicaba la primera fila del diario. Una vez hecho esto, se ponía 'EHZ' como posición básica de la clave del mensaje y se descifraba el segundo trigrama 'TBS'. El resultado que se obtuviera sería la nueva clave del mensaje, con el que se desencriptaría el resto del texto, sin tener en cuenta el grupo de identificación.
+
+También había que tener en cuenta que algunas letras se usaban en el encriptado como puntos, comas, etc. Por ejemplo, la 'X' se usaba como salto de línea. Esto lo veremos más adelante en la demostración del simulador.
+-------------------------------------------------------------------------------------
+NOVENA DIAPOSITIVA
+-------------------------------------------------------------------------------------
+Con respecto a la seguridad criptográfica que presentaba la Enigma, podemos considerar dos casos.
+
+Por un lado, en el modelo de tres rotores, contamos con 5 rotores de los que podemos escoger 3, por lo que tenemos 60 combinaciones posibles. Del mismo modo, cada rotor se puede colocar en 26 posiciones distintas, por lo que, con 3 rotores, tenemos mas de 17000 posiciones. A parte, el anillo de cada rotor funciona de forma similar al cableado, pero en este caso solo cuentan el rotor central y el de la derecha, porque no hay ningún rotor después del de la izquierda, así que tenemos 676 combinaciones de anillos. Esta es la fórmula que nos dice las combinaciones posibles del clavijero, de manera que, con 26 letras y 10 cables, tenemos este número de combinaciones. Haciendo cálculos, obtenemos alrededor de 10 elevado a 23 posibles combinaciones de la Enigma, lo que es equivalente a una clave de 77 bits.
+
+Por otro lado, en el modelo de cuatro rotores, tenemos que escoger 3 rotores entre 8 posibles, por lo que hay 336 combinaciones, además de las 2 opciones para el cuarto rotor, que pueden ser Beta y Gamma. Luego, al tener 4 rotores, se pueden colocar de mas de 400.000 maneras diferentes. El número de combinaciones en el clavijero y los anillos no se modifica. Por lo tanto, tenemos aproximadamente 10 elevado a 25 combinaciones de este tipo, equivalente a una clave de 84 bits.
+
+Estos dos resultados ya son un tamaño considerable para los estandares de hoy en día, de modo que, en los años 40, descifrar la máquina Enigma suponía todo un reto.
+-------------------------------------------------------------------------------------
+DÉCIMA DIAPOSITIVA
+-------------------------------------------------------------------------------------
+Entrando ya en el diseño y la implementación del simulador, hay que señalar que se ha elegido Scratch debido a que es un lenguaje visual, sencillo de entender y dedicado al aprendizaje de la programación.
+
+Además, gracias a que cualquier proyecto compartido en la web de Scratch lo puede modificar otro usuario, se consigue que las herramientas de una determinada persona puedan resultar útiles para otra.
+
+Por otra parte, el ambiente de trabajo que proporciona es intuitivo y ordenado, ofreciendo herramientas comparables a lenguajes de programación de más alto nivel.
+
+Por último, hechos como que se trate de un software libre, gratuito, multilenguaje y esté disponible en muchos sistemas operativos hacen que Scratch sea tan popular y cuente con más de cuarenta millones de usuarios y proyectos a día de hoy. 
+
+-------------------------------------------------------------------------------------
+DECIMOPRIMERA DIAPOSITIVA
+-------------------------------------------------------------------------------------
+Aquí podemos ver un esbozo que se hizo para indicar como estaría estructurado el simulador y la función de cada una de sus partes. 
+
+Como se puede apreciar, la pantalla principal sería la máquina vista de frente, con el teclado, el panel de luces y la clave del mensaje. 
+
+A partir de ella, podríamos movernos a otras dos pantallas, una para la configuración de los rotores (la selección, su orden, el ajuste de anillos, etc.); y otra para las conexiones del clavijero.
+
+-------------------------------------------------------------------------------------
+DECIMOSEGUNDA DIAPOSITIVA
+-------------------------------------------------------------------------------------
+Esta es la estructura final, en la que hemos adaptado el boceto anterior a Scratch. Las flechas indican las posibles transiciones entre las distintas pantallas.
+
+Para empezar, se hizo una pantalla de presentación del simulador y otra para sus instrucciones de uso y así conocer los controles y funciones del programa.
+
+Luego estaría la pantalla principal, donde se cifra o descifra una letra. De modo que al pulsar una tecla en nuestro teclado, se ensombrecerá su correspondiente en el teclado del simulador, y al soltar, se iluminará la letra encriptada en el panel de luces. 
+
+Al hacer esto, en los displays implementados se podrá ver como los rotores hacen sus pasos de rotación. 
+
+Este recuadro amarillo es el selector de componentes de la clave del mensaje, y lo movemos con las flechas de izquierda y derecha. Para modificar la clave, usamos las flechas arriba y abajo.
+
+En el clavijero, podremos conectar las letras mediante nuestro teclado. Cuando pulsemos una tecla, su correspondiente letra tendrá un extremo del cable conectado; y al pulsar en otra letra, ambas quedarán cableadas. 
+
+Si dejamos una letra conectada por un extremo y volvemos a pulsar sobre ella, su cable desaparecerá, indicando que abortamos su cableado. Para desconectar dos letras que están cableadas, simplemente debemos de pulsar sobre una de ellas.
+
+En la pantalla de rotores se han implementado varias funciones. Por un lado, en la parte inferior están los rotores que podemos usar, de forma que pulsando con el cursor sobre uno de ellos se colocará en la parte superior, siempre y cuando haya, al menos, un hueco libre para él. Los rotores se van colocando rellenando los huecos de derecha a izquierda. De la misma forma, para quitarlos pulsamos sobre los que están en la parte superior. Esta lista de Scratch indica que rotores se están utilizando, de izquierda a derecha. Por otro lado, para modificar el anillo de cada rotor del 1 al 8 pulsamos el número correspondiente de nuestro teclado. Pulsando 9 y 0 se configuran Beta y Gamma, respectivamente. Una vez se ha pulsado, aparece un rotor grande que lo representa en esta parte de la pantalla y le ajustamos el anillo con las flechas arriba y abajo, de forma similar a la clave del mensaje.
+
+Por último, se puede cambiar el modelo de Enigma que se está empleando, como se puede apreciar aquí (SIGUIENTE DIAPOSITIVA).
+
+-------------------------------------------------------------------------------------
+DECIMOTERCERA DIAPOSITIVA
+-------------------------------------------------------------------------------------
+De esta manera, tenemos tres modelos distintos de Enigma: Enigma-I, Enigma M3 y Enigma M4. La primera contiene los primeros cinco rotores, a la segunda se le añaden los tres restantes, y en la cuarta se incorporan Beta y Gamma. Hay dos versiones de cada modelo, una con el reflector B y otra con el C. En el caso de la M4, tenemos los reflectores finos. Para cambiar de modelo, simplemente hemos de pulsar las flechas de izquierda y derecha en la pantalla de rotores.
+
+-------------------------------------------------------------------------------------
+DECIMOCUARTA DIAPOSITIVA
+-------------------------------------------------------------------------------------
+Ahora vamos a ver una demostración del simulador implementado, descifrando el mensaje alemán que habíamos enseñado antes. (PONER EL VIDEO)
+
+-------------------------------------------------------------------------------------
+DECIMOQUINTA DIAPOSITIVA
+-------------------------------------------------------------------------------------
+Llegados a este punto, podemos afirmar que se han cumplido los objetivos expuestos al principio de la presentación, que eran explicar la mecánica de la Enigma, su origen y el importante papel que tuvo en nuestra historia; además de aclarar por qué se ha elegido el entorno de programación Scratch para el diseño y la implementación del simulador, con los modelos más conocidos e importantes que tuvo.
+
+Este simulador estará disponible para su uso en el museo de Informática, para que cualquier persona pueda familiarizarse con este método de cifrado clásico.
+
+Y con esto finalizo la presentación y me pongo a disposición del tribunal, muchas gracias.
+
+

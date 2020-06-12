@@ -1,0 +1,163 @@
+##### c4q.csp = coches 
+ 
+########################################## 
+###   Requetes, Parametres et Options  ### 
+########################################## 
+  
+\alpha = 0.1; # grado minimo de satisfactibilidad para suponer que una restriccion se satisface (ser una solucion)
+\filtering : f ; 
+\search : rfla , 
+    all_solutions # para encontrar todas las soluciones
+#    best_solution # para encontrar la mejor solucion
+#    first_solutions 5 # para encontrar las 5 primeras soluciones
+; 
+\static_labeling_order  : # Heuristica estatica
+    smallest_domain  # Por orden del dominio mas pequeño
+#    greatest_degree # Por orden de variables mas ligadas
+#    smallest_domain_by_degree # Relacion talla_dominio/grado mas pequño
+; 
+#\dynamic_labeling_order : # Heuristica dinamica
+#    smallest_domain  # Por orden del dominio mas pequeño
+#    smallest_domain_by_degree # Relacion talla_dominio/grado mas pequño
+# 
+; 
+\verbose :  
+    display_solutions  # Presenta solo las soluciones
+#    display_csp # Presenta el CSP despues del preproceso inicial
+#    display_filtering # Traza del preproceso
+#    display_search # Traza detallada de la busqueda de la solucion
+#       display_intervals # Traza del calculo de intervalos
+; 
+ 
+############################## 
+###       VARIABLES        ### 
+##############################  
+
+# Cada variable indica un posible tipo de acabado para la carroceria de los coches
+#0: No Pintura No Metalizado 
+#1: Pintura 
+#2: Metalizado 
+#3: Pintura y Metalizado  
+
+# Como se fabrican 5 modelos tenemos 5 variables, una por cada modelo. Los valores de cada modelo
+# son los diferentes tipos de acabados de la carroceria.
+\vi : M1, M2, M3, M4, M5 0..3; 
+ 
+############################## 
+###      CONTRAINTES       ### 
+##############################  
+
+# M1 tiene acabado 1 si y solamente si M2 tiene acabado 1 o 2: M1(1) <--> M2(1) o M2(2)
+    # M1(1) --> M2(1) o M2(2)  ->   No_M1(1) o M2(1) o M2(2) 
+    \doc:Doc1p1  
+            \ci : rd111 , M1!=1; 
+        \or  
+            \ci : rd112 ,  M2=1; 
+        \or  
+            \ci : rd113 ,  M2=2; 
+    ; 
+
+    # ( M2(1) o M2(2) ) --> M1(1)  -> ( No_M2(1) y No_M2(2) ) o M1(1)  -> ( No_M2(1) o M1(1) ) y ( No_M2(2) o M1(1) )
+
+        # ( No_M2(1) o M1(1) )
+        \doc:Doc1p2  
+                \ci : rd121 , M1=1; 
+            \or  
+                \ci : rd122 ,  M2!=1;
+        ; 
+
+        # ( No_M2(2) o M1(1) )
+        \doc:Doc1p3 
+                \ci : rd131 , M1=1; 
+            \or  
+                \ci : rd132 ,  M2!=2; # ALTERAAAAAAAAA NOSE SI M2(1) o M2(2)
+        ; 
+
+# M1 tiene acabado 2 si y solamente si, o M3 tiene acabado 0 o M5 tiene acabado 3: M1(2) <--> M3(0) o M5(3)
+    # M1(2) --> M3(0) o M5(3)  ->  No_M1(2) o M3(0) o M5(3)
+    \doc:Doc1p4  
+            \ci : rd141 , M1!=2; 
+        \or  
+            \ci : rd142 ,  M3=0; 
+        \or  
+            \ci : rd143 ,  M5=3; 
+    ; 
+    
+    # ( M3(0) o M5(3) ) --> M1(2)  -> ( No_M3(0) y No_M5(3) ) o M1(2) -> ( No_M3(0) o M1(2) ) y ( No_M5(3) o M1(2))
+        # ( No_M3(0) o M1(2) )
+        \doc:Doc1p5  
+                \ci : rd151 , M1=2; 
+            \or  
+                \ci : rd152 ,  M3!=0; 
+        ; 
+        # ( No_M5(3) o M1(2))
+        \doc:Doc1p6
+                \ci : rd161 , M1=2; 
+            \or  
+                \ci : rd162 ,  M5!=3;  
+        ; 
+
+# M2 tiene acabado 1 si y solamente si, o el modelo M1 tiene acabado 1 o 2, o M5 tiene acabado 0: M2(1) <--> M1(1) o M1(2) o M5(0)
+    # M2(1) --> M1(1) o M1(2) o M5(0)  -> No_M2(1) o M1(1) o M1(2) o M5(0)
+    \doc:Doc2p1 
+            \ci : rd211 , M2!=1; 
+        \or  
+            \ci : rd212 ,  M1=1; 
+        \or  
+            \ci : rd213 ,  M1=2; 
+        \or  
+            \ci : rd214 ,  M5=0; 
+    ; 
+    # ( M1(1) o M1(2) o M5(0) ) --> M2(1)  ->  ( No_M1(1) y No_M1(2) y No_M5(0) ) o M2(1)  
+        # No_M1(1) o M2(1)
+        \doc:Doc2p2 
+                \ci : rd221 , M2=1; 
+            \or  
+                \ci : rd222 ,  M1!=1;   
+        ; 
+        # No_M1(2) o M2(1)
+        \doc:Doc2p3 
+                \ci : rd231 , M2=1; 
+            \or  
+                \ci : rd232 ,  M1!=2; # ALERTAAAAAA NO_M1(1)
+        ; 
+        # No_M5(0) o M2(1)
+        \doc:Doc2p4 
+                \ci : rd241 , M2=1; 
+            \or  
+                \ci : rd242 ,  M5!=0;
+        ; 
+ 
+# M2 tiene acabado 1 si y solamente si M3 o el M4 tienen acabado 3: M2(1) <--> ( M3(3) o M4(3) )
+    # M2(1) --> ( M3(3) o M4(3) )  ->  NO_M2(1) o M3(3) o M4(3)
+    \doc:Doc2p5 
+            \ci : rd251 , M2!=2; 
+        \or  
+            \ci : rd252 ,  M3=3; 
+        \or  
+            \ci : rd253 ,  M4=3; 
+    ; 
+
+    # M3(3) o M4(3) --> M2(1)  ->   (No_M3(3) y No_M4(3) ) o M2(1)  ->  ( No_M3(3) o M2(1) ) y ( No_M4(3) o M2(1) )
+
+        # No_M3(3) o M2(1)
+        \doc:Doc2p6
+                \ci : rd261 , M2=1; 
+            \or  
+                \ci : rd262 ,  M3!=3;  
+        ;
+
+        # No_M4(3) o M2(1)
+        \doc:Doc2p7
+                \ci : rd271 , M2=1; 
+            \or  
+                \ci : rd273 ,  M4!=3; 
+        ;
+
+
+# El modelo M1 no tine el mismo acabado que el modelo M2
+\ci : rd1 , M1 != M2; 
+
+# Los modelos M3, M4 Y M5 tienen que tener acabados distintos entre ellos
+\cim : rd2 , !=(M3,M4,M5); 
+

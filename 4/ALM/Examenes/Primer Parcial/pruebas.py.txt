@@ -1,0 +1,15 @@
+def listar(ingredientes, no_combinan):
+    def backtracking(nodo):
+        if len(nodo)==4:
+            print(nodo)
+        else:
+        for i in range(len(nodo), len(ingredientes)):
+            if (nodo[len(nodo)], ingredientes[i]) not in no_combinan:
+                backtracking(nodo+[ingredientes[i]])
+    for i in range(0, len(ingredientes)):
+        backtraking(ingredientes[i])
+
+if __name__ == "__main__":
+    ingredientes = ['mozzarela','anchoa','alcaparra','jamon','atun','champinyon','aceituna','chorizo']
+    no_combinan = [('mozzarela','anchoa'),('atun','chorizo'),('jamon','atun'),('anchoa','chorizo'),('anchoa','champinyon')]
+    listar(ingredientes, no_combinan)

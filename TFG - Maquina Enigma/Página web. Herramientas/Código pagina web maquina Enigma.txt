@@ -1,0 +1,246 @@
+<p style="text-align: center"><span style="color: #d60066"><strong><span style="font-size: 2em;line-height: 1.5em">La máquina Enigma con Scratch</span></strong></span></p>
+
+<h5 style="text-align: center;color: #404040"><strong>Juan Antonio López Ramírez</strong></h5>
+
+<h3 style="text-align: left;color: #d60066"><strong>Historia</strong></h3>
+
+<p>La <strong>máquina Enigma</strong> es una máquina clásica de cifrado basada en rotores que tuvo un papel importante durante la Segunda Guerra Mundial, debido a que el ejército alemán la usaba para encriptar y desencriptar sus comunicaciones. Esta máquina fue creada a principios del siglo XX, en una época en la que la expansión de las telecomunicaciones aumentó la necesidad de crear métodos de cifrado automatizados que sustituyeran a los métodos manuales. Así, en 1918, el ingeniero alemán <strong>Arthur Scherbius</strong> inventó la primera máquina Enigma, con un <strong>mecanismo de impresión</strong> basado en una rueda giratoria.</p>
+
+<table style="border: 0px" border="0" width="200">
+<tbody>
+<tr>
+<td style="border: 0px;max-width: 800px"><img src="https://www.cryptomuseum.com/crypto/enigma/pe23/img/etz0t.jpg" alt="" width="200" height="225" class="alignleft size-medium wp-image-7712" /></td>
+<td style="vertical-align: middle;border: 0px">
+<blockquote><i>Die Handelsmaschine</i>, la primera máquina Enigma. En la imagen se puede observar el aspecto que tenía por dentro y por fuera.</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+
+<p>En 1924, debido a los problemas de impresión y a los altos costes, Scherbius desarrolló una máquina Enigma que producía su salida en un <strong>panel de luces</strong> en lugar de en papel; y cuyo mecanismo se encontraría alojado en una caja de madera.</p>
+
+<table style="border: 0px" border="0" width="200">
+<tbody>
+<tr>
+<td style="border: 0px;max-width: 800px"><img src="https://www.cryptomuseum.com/crypto/enigma/d/img/301443/039/full.jpg" alt="" width="300" height="225" class="alignleft size-medium wp-image-7712" /></td>
+<td style="vertical-align: middle;border: 0px">
+<blockquote>La Enigma D es un ejemplo del nuevo tipo de máquinas Enigma basadas en paneles de luces.</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+
+<p>Es a partir de la Enigma D cuando el ejército alemán empezó a mostrar interés por estas máquinas y, en 1932, se desarrolló la máquina Enigma-I, que incluía un <strong>clavijero</strong> que añadía una capa extra al cifrado.</p>
+
+<table style="border: 0px" border="0" width="200">
+<tbody>
+<tr>
+<td style="border: 0px;max-width: 800px"><img src="https://www.cryptomuseum.com/crypto/enigma/i/img/300002/022/full.jpg" alt="" width="300" height="225" class="alignleft size-medium wp-image-7712" /></td>
+<td style="vertical-align: middle;border: 0px">
+<blockquote>El modelo Enigma I fue el primero en ser empleado por el ejército alemán. Debajo de las teclas se puede apreciar el clavijero.</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+
+<p>Durante la Segunda Guerra Mundial, criptógrafos y matemáticos se reunieron en Bletchley Park, Reino Unido, para intentar descifrar los mensajes alemanes que se encriptaban con máquinas Enigma. Uno de ellos fue <strong>Alan Turing</strong>, que, basándose en experimentos que los polacos habían realizado para intentar romper la seguridad de Enigma, creó la <strong>máquina Bomba</strong>.</p>
+
+<p>Esta máquina emulaba el funcionamiento de varias máquinas Enigma a la vez y lo que hacía era comprobar si un texto sin cifrar se correspondía con el mensaje interceptado, para averiguar qué configuración utilizaban las máquinas Enigma ese día.</p>
+
+<table style="border: 0px" border="0" width="200">
+<tbody>
+<tr>
+<td style="border: 0px;max-width: 800px"><img src="https://i.ibb.co/g9Ht93y/la-maquina-bomba-de-alan-turing.jpg" alt="" width="300" height="225" class="alignleft size-medium wp-image-7712" /></td>
+<td style="vertical-align: middle;border: 0px">
+<blockquote>Alan Turing y su máquina Bomba fueron decisivos para el descifrado de los códigos empleados por los alemanes en las máquinas Enigma.</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+
+<p>Ante esto, la <strong>Armada alemana</strong> introdujo una versión de <strong>cuatro rotores</strong> de la máquina Enigma que no podía ser descifrada por la Bomba, ya que esta estaba diseñada exclusivamente para máquinas de tres rotores.</p>
+
+<p>En 1942, ya con los americanos como aliados, Reino Unido compartió con ellos el conocimiento sobre la tecnología de la Bomba y, en 1943, se desarrolló una versión para descifrar máquinas Enigma de cuatro rotores.</p>
+
+<table style="border: 0px" border="0" width="200">
+<tbody>
+<tr>
+<td style="border: 0px;max-width: 800px"><img src="https://www.christies.com/img/LotImages/2017/NYR/2017_NYR_14376_0391_000(a_four-rotor_enigma_cipher_machine_olympia_buromaschinenwerke_ag_in_er).jpg" alt="" width="225" height="300" class="alignleft size-medium wp-image-7712" /></td>
+<td style="vertical-align: middle;border: 0px">
+<blockquote>La Enigma M4 de cuatro rotores.</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+
+<h3 style="text-align: left;color: #d60066"><strong>Funcionamiento</strong></h3>
+
+<p>En cuanto al funcionamiento interno de una máquina Enigma, primero hay que conocer sus componentes.</p>
+
+<p>Una máquina Enigma no es más que una máquina de escribir con 26 teclas en la parte inferior, 26 bombillas en la parte central y los rotores situados en la parte superior formando la clave del mensaje, de modo que cuando pulsamos una tecla se ilumina la letra encriptada en el panel de luces y giran los rotores.</p>
+
+<p>La configuración para saber como se encripta una letra viene determinada por el <strong>clavijero</strong>, los <strong>rotores</strong> y los <strong>reflectores</strong>.</p>
+
+<p>Habían 10 posibles rotores para usar. Los ocho primeros se correspondían con los números romanos, mientras que el noveno y el décimo recibían el nombre de <strong>Beta</strong> y <strong>Gamma</strong>. Los rotores del <strong>I</strong> al <strong>V</strong> eran usados en las máquinas del ejército de tierra y de aire, mientras que del <strong>VI</strong> al <strong>VIII</strong> los usaba la Armada. <strong>Beta</strong> y <strong>Gamma</strong> eran los que se utilizaban en la versión de cuatro rotores, y no se podían combinar con los demás, solo se podían colocar en la posición de más a la izquierda de la máquina.</p>
+
+<table style="border: 0px" border="0" width="200">
+<tbody>
+<tr>
+<td style="border: 0px;max-width: 800px"><img src="https://i.ibb.co/sgFzCDz/rotores.jpg" alt="" width="556" height="467" class="alignleft size-medium wp-image-7712" /></td>
+<td style="vertical-align: middle;border: 0px">
+<blockquote>Tabla que muestra los 10 posibles rotores a utilizar. Cada rotor contiene 26 contactos con resorte en su lado derecho y 26 contactos planos en el izquierdo. Si, por ejemplo, al rotor <strong>I</strong> le llega una 'B' por la derecha, devolverá una 'K' por la izquierda.</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+
+<p>Cuando el impulso eléctrico atraviesa los tres o cuatro rotores de la máquina, el <strong>reflector</strong> es el componente que se encarga de reenviarlo en orden inverso hasta el panel de luces. Habían cuatro posibles reflectores: <strong>B</strong>, <strong>C</strong>, <strong>B fino</strong> y <strong>C fino</strong>. Los reflectores <strong>B</strong> y <strong>C</strong> se usaban en las máquinas de tres rotores, mientras que los finos se usaban en las de cuatro.</p>
+
+<table style="border: 0px" border="0" width="200">
+<tbody>
+<tr>
+<td style="border: 0px;max-width: 800px"><img src="https://i.ibb.co/hVCSJKJ/reflectores.jpg" alt="" width="231" height="468" class="alignleft size-medium wp-image-7712" /></td>
+<td style="vertical-align: middle;border: 0px">
+<blockquote>En la siguiente tabla se muestran los posibles reflectores. Si, por ejemplo, usando el reflector <strong>B</strong>, llega una 'A' desde el primer rotor, el reflector le enviará de vuelta una 'Y'.</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+
+<p>Cada rotor contaba con un <strong>punto de rotación</strong>, que indicaba cuándo este hace girar al de su izquierda. En una máquina de cuatro rotores, el rotor de más a la izquierda, que puede ser <strong>Beta</strong> o <strong>Gamma</strong>, no girará aunque el rotor de su derecha se encuentre en su punto de rotación. En la tabla de debajo se indican los puntos de rotación de cada rotor.</p>
+
+<table style="border: 0px" border="0" width="200">
+<tbody>
+<tr>
+<td style="border: 0px;max-width: 800px"><img src="https://i.ibb.co/0C4FVPc/puntos-de-giro-de-rotores.jpg" alt="" width="666" height="161" class="alignleft size-medium wp-image-7712" /></td>
+<td style="vertical-align: middle;border: 0px">
+</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+
+<p>Por último, se cuenta con un <strong>clavijero</strong>, que es un tablero donde podemos conectar un par de letras. De esta forma, ambas letras se intercambian antes y después de la codificación por parte de los rotores. Aunque es posible usar hasta trece cables a la vez, solo se usaban diez.</p>
+
+<table style="border: 0px" border="0" width="200">
+<tbody>
+<tr>
+<td style="border: 0px;max-width: 800px"><img src="https://img-cdn.hipertextual.com/files/2015/01/maquina-enigma.jpg?strip=all&lossy=1&quality=57&resize=740%2C490&ssl=1" alt="" width="500" height="300" class="alignleft size-medium wp-image-7712" /></td>
+<td style="vertical-align: middle;border: 0px">
+<blockquote>En este ejemplo de un clavijero, se puede apreciar como está conectada la letra 'O' con la 'S'; y la 'J' con la 'A'. </blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+
+<h3 style="text-align: left;color: #d60066"><strong>Ajuste de anillo de los rotores</strong></h3>
+
+<p>A continuación se va a explicar de forma gráfica como afecta el <strong>ajuste de anillo</strong> de cada rotor al cifrado de una determinada letra con una determinada configuración de la máquina Enigma. Esto también servirá para ilustrar como se encripta una letra.</p>
+
+<p>Supongamos que el rotor <strong>I</strong> está situado en la parte derecha, en su forma inicial. Cuando le llega una 'A', esta viajará por el cableado interno hasta la letra 'E'. Como esta se encuentra en la quinta posición del rotor, la salida será la quinta letra del abecedario, que es la 'E'.</p>
+
+<p>Una vez hecho esto, el rotor realiza un paso, por lo que ahora se encuentra en esta configuración. Si le llega una 'A', esta ahora hace contacto con la letra 'K', que como se encuentra en la décima posición del rotor, la salida es la décima letra del abecedario, que es la 'J'.</p>
+
+<table style="border: 0px" border="0" width="200">
+<tbody>
+<tr>
+<td style="border: 0px;max-width: 800px"><img src="https://i.ibb.co/XDtGVSD/rotor-Icifrado.jpg" alt="" width="400" height="424" class="alignleft size-medium wp-image-7712" /></td>
+<td style="vertical-align: middle;border: 0px">
+<blockquote>Proceso de cifrado de la letra 'A' en dos configuraciones consecutivas. </blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+
+<p>En el siguiente caso hemos supuesto que el rotor se encuentra con el <strong>ajuste de anillo B-02</strong>, lo que quiere decir que la primera letra del rotor, que en este caso es la 'E', se encuentra cableada en la letra 'B', y el resto de letras del rotor se conectan en orden. De este modo, al pulsar la 'A', esta hace contacto con la 'J', que como se encuentra en la decimoprimera posición del rotor, la salida es la decimoprimera letra del abecedario, que es la 'K'.</p>
+
+<table style="border: 0px" border="0" width="200">
+<tbody>
+<tr>
+<td style="border: 0px;max-width: 800px"><img src="https://i.ibb.co/qCLbDnH/rotor-Ianillo-B.jpg" alt="" width="155" height="530" class="alignleft size-medium wp-image-7712" /></td>
+<td style="vertical-align: middle;border: 0px">
+<blockquote>Cifrado de la letra 'A' con el ajuste de anillo B-02.</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+
+<p>Como podemos observar, una misma letra se puede encriptar de distintas formas, dependiendo de la configuración interna de la Enigma, por lo que se consigue un cifrado complejo. Además, hay que tener en cuenta que lo normal es que hayan tres o cuatro rotores uno al lado del otro, de forma que la entrada de uno es la salida del de su derecha, hasta que el impulso llega al reflector y hace el camino contrario.</p>
+
+<h3 style="text-align: left;color: #d60066"><strong>Procedimiento de uso</strong></h3>
+
+<p>En cuanto a los mensajes, los alemanes utilizaban un diario de claves para saber como codificar, y en él se anotaban el orden de rotores (<i>Walzenlage</i>), el ajuste de anillo de cada uno (<i>Ringstellung</i>), las conexiones del clavijero (<i>Steckerverbindungen</i>) y los grupos de identificación (<i>Kenngruppen</i>). También había que tener en cuenta que algunas letras se usaban en el encriptado como puntos, comas, etc. Por ejemplo, la 'X' se usaba como salto de línea.</p>
+
+<p>Si observamos la imagen de debajo, podemos apreciar un ejemplo de un mensaje cifrado con la máquina Enigma. Para desencriptarlo, en primer lugar, se observaba el primer grupo de cinco letras, que se correspondía con el grupo de identificación. Si miramos el diario de claves de la siguiente imagen, vemos que al grupo 'EXS' se le ha añadido 'TV'. Esto era lo habitual, añadir dos letras aleatorias al principio o al final del grupo para colocarlo junto al resto del mensaje. Así se sabía que había que configurar la máquina Enigma como indicaba la primera fila del diario. Una vez hecho esto, se ponía 'EHZ' como posición básica de la clave del mensaje y se descifraba el segundo trigrama 'TBS'. El resultado que se obtuviera sería la nueva clave del mensaje, con el que se desencriptaría el resto del texto, sin tener en cuenta el grupo de identificación.</p>
+
+<table style="border: 0px" border="0" width="200">
+<tbody>
+<tr>
+<td style="border: 0px;max-width: 800px"><img src="https://i.ibb.co/TwfRzhF/ejemplomensaje.jpg" alt="" width="390" height="95" class="alignleft size-medium wp-image-7712" /></td>
+<td style="vertical-align: middle;border: 0px">
+<blockquote>Arquetipo de mensaje cifrado.</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+
+<table style="border: 0px" border="0" width="200">
+<tbody>
+<tr>
+<td style="border: 0px;max-width: 800px"><img src="https://i.ibb.co/nMKMcg1/diario-de-claves.jpg" alt="" width="686" height="117" class="alignleft size-medium wp-image-7712" /></td>
+<td style="vertical-align: middle;border: 0px">
+<blockquote>Ejemplo de un diario de claves.</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+
+<h3 style="text-align: left;color: #d60066"><strong>Simulador e instrucciones</strong></h3>
+
+<p>El simulador realizado cuenta con seis modelos de la máquina Enigma, que son: </p>
+
+<ol>
+  <li>Wehrmacht - UKW = B</li>
+  <li>Wehrmacht - UKW = C</li>
+  <li>Kriegsmarine M3 - UKW = B</li>
+  <li>Kriegsmarine M3 - UKW = C</li>
+  <li>Kriegsmarine M4 - UKW = B</li>
+  <li>Kriegsmarine M4 - UKW = C</li>
+</ol>
+
+<p>Los cuatro primeros modelos funcionan con una clave de tres rotores, mientras que los dos últimos con una clave de cuatro. La 'B' y la 'C' del final de cada modelo indican con qué reflector están trabajando.</p>
+
+<p>Las instrucciones de uso del simulador son: </p>
+
+<ol>
+  <li>Presionar la bandera verde para comenzar la aplicación.</li>
+  <li>Pulsar la tecla "9" para pasar la portada y leer las instrucciones.</li>
+</ol>
+
+<iframe src="https://scratch.mit.edu/projects/314937155/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+<p>Para acceder a la página de la máquina Enigma en la web de Scratch ir al siguiente enlace –> <a href="https://scratch.mit.edu/projects/314937155">Enigma</a></p>
+
+<h3 style="text-align: left;color: #d60066"><strong>Vídeo del funcionamiento del simulador</strong></h3>
+
+<p>En este punto se va a mostrar un video del uso del simulador descifrando el mensaje alemán del que hemos hablado anteriormente.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/esWR4w6O3jA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p>Muchas gracias por tu tiempo y espero que hayas disfrutado con la <strong>máquina Enigma</strong>.</p><br/>
+
+<p>Creador del simulador: Juan Antonio López Ramírez.</p>
+
+<p>Tutor: Xavier Molero Prieto.</p>

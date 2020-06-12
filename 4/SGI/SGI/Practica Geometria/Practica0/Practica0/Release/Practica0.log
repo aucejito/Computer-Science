@@ -1,0 +1,22 @@
+﻿  HolaOpenGL.cpp
+c:\users\jalr_\downloads\gl\include\utilidades.h(29): warning C4305: 'inicializando': truncamiento de 'double' a 'const GLfloat'
+c:\users\jalr_\downloads\gl\include\utilidades.h(30): warning C4305: 'inicializando': truncamiento de 'double' a 'const GLfloat'
+c:\users\jalr_\downloads\gl\include\utilidades.h(35): warning C4305: 'inicializando': truncamiento de 'double' a 'const GLfloat'
+c:\users\jalr_\downloads\gl\include\utilidades.h(36): warning C4305: 'inicializando': truncamiento de 'double' a 'const GLfloat'
+c:\users\jalr_\downloads\gl\include\utilidades.h(38): warning C4305: 'inicializando': truncamiento de 'double' a 'const GLfloat'
+c:\users\jalr_\downloads\gl\include\utilidades.h(252): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+c:\users\jalr_\desktop\cosas de juan\sgi\practica geometria\practica0\practica0\holaopengl.cpp(32): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+c:\users\jalr_\desktop\cosas de juan\sgi\practica geometria\practica0\practica0\holaopengl.cpp(31): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+c:\users\jalr_\desktop\cosas de juan\sgi\practica geometria\practica0\practica0\holaopengl.cpp(36): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+c:\users\jalr_\desktop\cosas de juan\sgi\practica geometria\practica0\practica0\holaopengl.cpp(35): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+c:\users\jalr_\desktop\cosas de juan\sgi\practica geometria\practica0\practica0\holaopengl.cpp(50): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+c:\users\jalr_\desktop\cosas de juan\sgi\practica geometria\practica0\practica0\holaopengl.cpp(49): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+c:\users\jalr_\desktop\cosas de juan\sgi\practica geometria\practica0\practica0\holaopengl.cpp(54): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+c:\users\jalr_\desktop\cosas de juan\sgi\practica geometria\practica0\practica0\holaopengl.cpp(53): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+c:\users\jalr_\desktop\cosas de juan\sgi\practica geometria\practica0\practica0\holaopengl.cpp(68): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+  Generando código
+  0 of 6 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Generación de código finalizada
+  Practica0.vcxproj -> C:\Users\jalr_\Desktop\Cosas de Juan\SGI\Practica Geometria\Practica0\Practica0\\Practica0.exe

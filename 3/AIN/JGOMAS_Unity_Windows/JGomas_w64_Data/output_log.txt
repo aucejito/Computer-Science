@@ -1,0 +1,74 @@
+Initialize engine version: 5.1.0f3 (ec70b008569d)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [aticfx64.dll 24.20.11001.5003]
+    Renderer: Radeon RX 580 Series
+    Vendor:   ATI
+    VRAM:     8137 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=1 INTZ=1 NULL=1 RESZ=1 SlowINTZ=1
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\Cosas de Juan\AIN\JGOMAS_Unity_Windows\JGomas_w64_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Cosas de Juan\AIN\JGOMAS_Unity_Windows\JGomas_w64_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Cosas de Juan\AIN\JGOMAS_Unity_Windows\JGomas_w64_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Cosas de Juan\AIN\JGOMAS_Unity_Windows\JGomas_w64_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Cosas de Juan\AIN\JGOMAS_Unity_Windows\JGomas_w64_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading D:\Cosas de Juan\AIN\JGOMAS_Unity_Windows\JGomas_w64_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: D:\Cosas de Juan\AIN\JGOMAS_Unity_Windows\JGomas_w64_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Cosas de Juan\AIN\JGOMAS_Unity_Windows\JGomas_w64_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Cosas de Juan\AIN\JGOMAS_Unity_Windows\JGomas_w64_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Cosas de Juan\AIN\JGOMAS_Unity_Windows\JGomas_w64_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\Cosas de Juan\AIN\JGOMAS_Unity_Windows\JGomas_w64_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading D:\Cosas de Juan\AIN\JGOMAS_Unity_Windows\JGomas_w64_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: D:\Cosas de Juan\AIN\JGOMAS_Unity_Windows\JGomas_w64_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Cosas de Juan\AIN\JGOMAS_Unity_Windows\JGomas_w64_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\Cosas de Juan\AIN\JGOMAS_Unity_Windows\JGomas_w64_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Cosas de Juan\AIN\JGOMAS_Unity_Windows\JGomas_w64_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.045 seconds
+desktop: 1920x1080 59Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: D:\Cosas de Juan\AIN\JGOMAS_Unity_Windows\JGomas_w64_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\Cosas de Juan\AIN\JGOMAS_Unity_Windows\JGomas_w64_Data\Managed\System.dll (this message is harmless)
+Platform assembly: D:\Cosas de Juan\AIN\JGOMAS_Unity_Windows\JGomas_w64_Data\Managed\UnityScript.Lang.dll (this message is harmless)
+Platform assembly: D:\Cosas de Juan\AIN\JGOMAS_Unity_Windows\JGomas_w64_Data\Managed\Boo.Lang.dll (this message is harmless)
+Shader 'Nature/Terrain/Specular': fallback shader 'Nature/Terrain/Diffuse' not found
+GUI button pressed...192.168.1.12
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+STARTING
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+WELCOME MESSAGE: JGOMAS Render Engine Server v. 0.1.0, Mon Jun 04 15:38:56 CEST 2018
+
+
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+CONNECTION MESSAGE: COM Server: Connection Accepted
+
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+MAP RECEIVED: map_01
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Bases 16 28 20 31
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Connected to JGOMAS ACC
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Close connection CControl
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Estoy en OnDestroy
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+

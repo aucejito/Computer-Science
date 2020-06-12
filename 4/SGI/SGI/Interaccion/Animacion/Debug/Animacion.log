@@ -1,0 +1,12 @@
+﻿  Animacion.cpp
+c:\users\jalr_\downloads\gl\include\utilidades.h(29): warning C4305: 'inicializando': truncamiento de 'double' a 'const GLfloat'
+c:\users\jalr_\downloads\gl\include\utilidades.h(30): warning C4305: 'inicializando': truncamiento de 'double' a 'const GLfloat'
+c:\users\jalr_\downloads\gl\include\utilidades.h(35): warning C4305: 'inicializando': truncamiento de 'double' a 'const GLfloat'
+c:\users\jalr_\downloads\gl\include\utilidades.h(36): warning C4305: 'inicializando': truncamiento de 'double' a 'const GLfloat'
+c:\users\jalr_\downloads\gl\include\utilidades.h(38): warning C4305: 'inicializando': truncamiento de 'double' a 'const GLfloat'
+c:\users\jalr_\downloads\gl\include\utilidades.h(252): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+c:\users\jalr_\desktop\cosas de juan\sgi\animacion\animacion\animacion\animacion.cpp(21): warning C4305: 'argumento': truncamiento de 'double' a 'GLclampf'
+c:\users\jalr_\desktop\cosas de juan\sgi\animacion\animacion\animacion\animacion.cpp(69): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+c:\users\jalr_\desktop\cosas de juan\sgi\animacion\animacion\animacion\animacion.cpp(112): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+c:\users\jalr_\desktop\cosas de juan\sgi\animacion\animacion\animacion\animacion.cpp(132): warning C4326: el tipo de valor devuelto de 'main' debe ser 'int' en lugar de 'void'
+  Animacion.vcxproj -> C:\Users\jalr_\Desktop\Cosas de Juan\SGI\Animacion\Animacion\Animacion\\Animacion.exe

@@ -1,0 +1,44 @@
+def listar(ingredientes, no_combinan):
+    def prometedor(nodo, nuevo):
+        for a,b in no_combinan:
+            if b==nuevo and a in nodo:
+                return False
+            else:
+                return True
+    def backtracking(nodo):
+        if len(nodo)==4:
+            print(nodo)
+        else:
+            indice = ingredientes.index(nodo[-1])+1
+            for i in ingredientes[indice:-1]:
+                if prometedor(nodo, i) and i not in nodo:
+                    backtracking(nodo+[i])
+            
+    for i in range(0,len(ingredientes)-3):
+        backtracking([ingredientes[i]])
+
+ingredientes = ['mozzarela','anchoa','alcaparra','jamon','atun','champinyon','aceituna','chorizo']
+no_combinan = [('mozzarela','anchoa'),('atun','chorizo'),('jamon','atun'),('anchoa','chorizo'),('anchoa','champinyon')]
+listar1(ingredientes, no_combinan)
+            
+
+
+
+def listar1(ingredientes,no_combinan):
+    def prometedor(node,nuevo):
+        for a,b in no_combinan:
+            if b==nuevo and a in node:
+                return False
+            return True
+    def backtracking(node):
+        if len(node)==4:
+            print(", ".join(node))
+        else:
+            primero = 0 if len(node)==0 else ingredientes.index(node[-1])+1
+            for nuevo in ingredientes[primero:-1]:
+                if prometedor(node,nuevo):
+                    backtracking(node+[nuevo])
+    backtracking([])
+
+
+

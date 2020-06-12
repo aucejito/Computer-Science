@@ -1,0 +1,50 @@
+##### matrizmagica.csp = cuadrado magico
+
+##########################################
+###   Requetes, Parametres et Options  ###
+##########################################
+ 
+\alpha = 0.1;
+\filtering : f ;
+\search : rfla ,
+	all_solutions
+#	best_solution
+#	first_solutions 5
+;
+\static_labeling_order  :
+	smallest_domain 
+#	greatest_degree
+#	smallest_domain_by_degree
+;
+#\dynamic_labeling_order :
+#	smallest_domain 
+#	smallest_domain_by_degree
+#
+;
+\verbose : 
+	display_solutions 
+#	display_csp
+#	display_filtering
+#	display_search
+#       display_intervals
+;
+
+##############################
+###       VARIABLES        ###
+############################## 
+
+\vi : X1, X2, X3, X4, X5, X6, X7, X8, X9 1..9 ;
+
+##############################
+###      CONTRAINTES       ###
+############################## 
+
+\cim : rd0 , !=(X1,X2,X3,X4,X5,X6,X7,X8,X9);
+\ci : rd1 , X1+X2+X3 = X1+X5+X9;
+\ci : rd2 , X1+X2+X3 = X1+X4+X7;
+\ci : rd3 , X1+X2+X3 = X2+X5+X8;
+\ci : rd4 , X1+X2+X3 = X3+X6+X9;
+\ci : rd5 , X1+X2+X3 = X4+X5+X6;
+\ci : rd6 , X1+X2+X3 = X7+X8+X9;
+\ci : rd7 , X1+X2+X3 = X3+X5+X7;
+
