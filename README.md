@@ -21,7 +21,7 @@ Asignaturas de cuarto:
 
 - Algorítmica (ALM)
 
-- Aprendizaje Automático (ALM)
+- Aprendizaje Automático (APR)
 
 - Criptografía (CRI)
 
